@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Things Presidents Say</title>
+    <meta name="description" content="Presidential Quote Generator">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Luther Calvin Riggs">
+
+    <!-- Style Sheets -->
+    <link href="styles/reset.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" media="all"/>
+
+    <style>
+    
+    </style>
+
+</head>
+
+<body>
+
+    <div id='background'>
+
+        <!-- <h1 id='page-title'>Stupid Presidential Quotes</h1> -->
+        
+        <div id='blue-border'>
+            
+            <div id='content-container'>
+
+                <div id='quote-container'>
+                    <div id="quote-box">
+                        <q id='quote'>Quote</q>
+                    </div>
+                </div>
+
+                <div id='speaker-container'>
+                    <cite id='speaker'>- Speaker </cite>
+                </div>
+
+                <div id='date-container'>
+                    <p id='date'>Date</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id='button'>
+            <button id='quote-generator-btn' type="submit">What else did they say?</button>
+            <!-- <p id='quote-generator-btn' type="submit">What else did they say?</p> -->
+            <!-- <a id='dollar-bill-btn' type='submit'>
+                <img id='dollar-bill-image' alt='This is a button' src='images/100-dollar-bill.jpg'>
+            </a> -->
+        </div>
+        
+    </div>
+    
+</body>
+
+<script>
+    const quote = document.getElementById('quote');
+    const speaker = document.getElementById('speaker');
+    const date = document.getElementById('date');
+
+    const q = 1; // number of quotes in the array
+    
+    getQuote(num) {
+        quote.textContent = quote[num];
+    }
+
+    getSpeaker(num) {
+        speaker.textContent = speaker[num];
+    }
+
+    getDate(num) {
+        date.textContent = date[num];
+    }
+
+    showQuote(){
+        let num = Math.random()*q;
+        getQuote(num);
+        getSpeaker(num);
+        getDate(num);
+    }
+
+    button.onclick = showQuote();
+
+</script>
+
+</html>
