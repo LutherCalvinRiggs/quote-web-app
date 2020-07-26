@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Things Presidents Say</title>
+    <title>Things the Presidents Says</title>
     <meta name="description" content="Presidential Quote Generator">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Luther Calvin Riggs">
@@ -13,6 +13,11 @@
     <!-- Style Sheets -->
     <link href="styles/reset.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="styles/main.css" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- Array Sheets -->
+    <script src="/scripts/quoteArray.js" type="text/javascript"></script>
+    <script src="/scripts/speakerArray.js" type="text/javascript"></script>
+    <script src="/scripts/dateArray.js" type="text/javascript"></script>
 
     <style>
     
@@ -23,8 +28,6 @@
 <body>
 
     <div id='background'>
-
-        <!-- <h1 id='page-title'>Stupid Presidential Quotes</h1> -->
         
         <div id='blue-border'>
             
@@ -32,24 +35,28 @@
 
                 <div id='quote-container'>
                     <div id="quote-box">
-                        <q id='quote'>Quote</q>
+                        <q id='quote'>Things the President Says</q>
                     </div>
                 </div>
 
                 <div id='speaker-container'>
-                    <cite id='speaker'>- Speaker </cite>
+                    <cite id='speaker'>Click the button for a quote</cite>
                 </div>
 
                 <div id='date-container'>
-                    <p id='date'>Date</p>
+                    <p id='date'>&copy Luther Calvin Riggs - 2020</p>
                 </div>
 
+            </div>
+
+            <div id='transition-box' aria-hidden='true'>
+                <img class='transition-start' src='/images/trump-pres-seal.png' alt=''>
             </div>
 
         </div>
 
         <div id='button'>
-            <button id='quote-generator-btn' type="submit">What else did they say?</button>
+            <button id='new-quote-button' type="submit">What else did they say?</button>
             <!-- <p id='quote-generator-btn' type="submit">What else did they say?</p> -->
             <!-- <a id='dollar-bill-btn' type='submit'>
                 <img id='dollar-bill-image' alt='This is a button' src='images/100-dollar-bill.jpg'>
@@ -61,32 +68,52 @@
 </body>
 
 <script>
+    
     const quote = document.getElementById('quote');
     const speaker = document.getElementById('speaker');
-    const date = document.getElementById('date');
+    const date = document.getElementById('date'); 
+    // const image = document.querySelector(img.transition-start);
+    const button = document.getElementById('new-quote-button');
 
-    const q = 1; // number of quotes in the array
-    
-    getQuote(num) {
-        quote.textContent = quote[num];
+    function printError() {
+        quote.textContent = 'Error: unequal array length.';
+        speaker.textContent = '';
+        date.textContent = '';
     }
 
-    getSpeaker(num) {
-        speaker.textContent = speaker[num];
+    function getQuote(num){
+        currentQuote = quoteArray[num];
+        currentSpeaker = speakerArray[num];
+        currentDate = dateArray[num];
     }
 
-    getDate(num) {
-        date.textContent = date[num];
+    function printQuote() {
+        quote.textContent = currentQuote;
+        speaker.textContent = currentSpeaker;
+        date.textContent = currentDate;
     }
 
-    showQuote(){
-        let num = Math.random()*q;
-        getQuote(num);
-        getSpeaker(num);
-        getDate(num);
+    function transition() {
+        if (image) {
+            image.className = image.transition-end
+        }  
+        return image;
     }
 
-    button.onclick = showQuote();
+    function showQuote() {
+        let num = Math.floor(Math.random()*quoteArray.length);
+
+        if (quoteArray.length === speakerArray.length && 
+            speakerArray.length === dateArray.length && 
+            dateArray.length === quoteArray.length){
+            getQuote(num);
+            printQuote();
+        } else {
+            printError();
+        }
+    }
+
+    button.onclick = showQuote;
 
 </script>
 

@@ -93,11 +93,10 @@ body{
 }
 
 #button{
-    /* display: absolute; */
     margin: 20px auto;
 }
 
-#quote-generator-btn{
+#new-quote-button{
     border-radius: 4px;
     padding: 5px;
     box-shadow: 2px 2px 5px black;
@@ -106,7 +105,26 @@ body{
     font-size: 1.4rem;
 }
 
-#dollar-bill-btn{
+#transition-box{
+    position: absolute;
+    top: 0;
+}
+
+.transition-start{
+    width: 0px;
+    height: 0px;
+    transition: width height 1s ease-in ;
+}
+
+.transition-end{
+    width: 1000px;
+    height: 1000px;
+    transition: width height 1s ease-in ;
+}
+
+
+
+/* #dollar-bill-btn{
     margin: auto;
 }
 
@@ -118,4 +136,4 @@ body{
 
 #dollar-bill-image:hover{
     box-shadow: 2px 2px 50px black;
-}
+} */
