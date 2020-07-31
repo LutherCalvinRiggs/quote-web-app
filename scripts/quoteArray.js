@@ -102,5 +102,10 @@ let quoteArray = [
     'It was Jackie O., and that\'s good, but we have our own Jackie O. today. It\'s called Melania. We\'ll call it Melania T.',
     'I just had a meeting with somebody that\'s a pollster, and I\'m winning everywhere.',
     'There\'s nothing wrong with listening. If somebody called from a country, Norway, "We have information on your opponent," oh, I think I\'d want to hear it.',
-    'Nobody\'s ever been treated badly like me.'
+    'Nobody\'s ever been treated badly like me.',
+    'Why don\'t we nuke them? They start forming off the coast of Africa, as they\'re moving across the Atlantic, we drop a bomb inside the eye of the hurricane and it disrupts it. Why can\'t we do that?',
+    'I am happy to inform all of the people living their Suburban Lifestyle Dream that you will no longer be bothered or financially hurt by having low income housing built in your neighborhood',
+    'With Universal Main-In Voting (not Absentee Voting, which is good), 2020 will be the most INACCURATE & FRAUDULENT Election in history.',
+    '[The election] will be a great embarrassment to the USA. Delay the Election until people can properly, securly and safely vote???',
+    'Support Patio Pizza and its wonderful owner, Guy Caligiuri, in St. James, Long Island (N.Y.). Great Pizza!!!'
 ];

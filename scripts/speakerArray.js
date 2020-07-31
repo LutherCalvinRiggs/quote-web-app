@@ -102,5 +102,10 @@ let speakerArray = [
     '- President Donald J Trump',
     '- President Donald J Trump',
     '- President Donald J Trump',
+    '- President Donald J Trump',
+    '- President Donald J Trump',
+    '- President Donald J Trump',
+    '- President Donald J Trump',
+    '- President Donald J Trump',
     '- President Donald J Trump'
 ];
