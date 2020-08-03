@@ -38,6 +38,10 @@
 
     <div id='background'>
         
+        <!-- <div id='transition-image-box' aria-hidden='true'>
+            <img class='transition-image' src='/images/trump-pres-seal.png' alt=''>
+        </div> -->
+
         <div id='blue-border'>
             
             <div id='content-container'>
@@ -53,20 +57,18 @@
                 </div>
 
                 <div id='date-container'>
-                    <p id='date'>Click the button below for a quote</p>
+                    <p id='date'></p>
                 </div>
 
             </div>
 
-            <div id='transition-box' aria-hidden='true'>
-                <img class='transition-start' src='/images/trump-pres-seal.png' alt=''>
-            </div>
+            
 
         </div>
 
         <div id='button'>
             
-            <button id='new-quote-button' type="submit">What else did they say?</button>
+            <button id='new-quote-button' type="submit">What did they say?</button>
         
         </div>
         
@@ -79,7 +81,7 @@
     const quote = document.getElementById('quote');
     const speaker = document.getElementById('speaker');
     const date = document.getElementById('date'); 
-    // const image = document.querySelector(img.transition-start);
+    // const image = document.querySelector('.transition-image');
     const button = document.getElementById('new-quote-button');
     const multiplier = quoteArray.length 
 
@@ -95,17 +97,21 @@
         currentDate = dateArray[num];
     }
 
+    // function transition(e) {
+    //     image.classList.add('transitioning');
+    // }
+
+    // function removeTransition(e) {
+    //     if (e.propertyName !== 'transform')
+    //     return;
+    //     e.target.classList.remove('transitioning');
+    // }
+
     function printQuote() {
         quote.textContent = currentQuote;
         speaker.textContent = currentSpeaker;
         date.textContent = currentDate;
-    }
-
-    function transition() {
-        if (image) {
-            image.className = image.transition-end
-        }  
-        return image;
+        
     }
 
     function showQuote() {
@@ -115,6 +121,7 @@
             speakerArray.length === dateArray.length && 
             dateArray.length === quoteArray.length){
             console.log(num);
+            // image.classList.add('transitioning');
             getQuote(num);
             printQuote();
         } else {
@@ -122,6 +129,7 @@
         }
     }
 
+    // image.addEventListener('transitionend',removeTransition);
     button.onclick = showQuote;
 
 </script>

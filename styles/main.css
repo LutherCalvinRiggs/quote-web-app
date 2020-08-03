@@ -10,7 +10,11 @@ html {
 
 body{
     text-align: center;
-    background: repeating-linear-gradient(var(--red), var(--red) 9%, var(--white) 9%, var(--white) 18%);
+    background-image: url(/images/american-flag-background.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: repeating-linear-gradient(var(--red), var(--red) 9%, var(--white) 9%, var(--white) 18%); */
 }
 
 #background{
@@ -110,25 +114,43 @@ body{
     box-shadow: 2px 2px 5px black;
     background-color: var(--white);
     color: black;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
-#transition-box{
+#transition-image-box{
     position: absolute;
-    top: 0;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
 }
 
-.transition-start{
+.transition-image{
     width: 0px;
     height: 0px;
-    transition: width height 1s ease-in ;
+    transition: all .1s ease-in;
 }
 
-.transition-end{
-    width: 1000px;
-    height: 1000px;
-    transition: width height 1s ease-in ;
+.transitioning{
+    /* animation-name: pres-seal;
+    animation-duration: 100ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in; */
+    width: 100vw;
+    height: auto;
+    /* rotate: 359deg; */
 }
+
+/* @keyframes pres-seal {
+    0% {
+        width: 0px;
+        height: 0px;
+
+    }
+    100% {
+        width: 100vw;
+        height: 1000px;
+    }
+} */
 
 @media screen and (max-width: 1375px){
     #quote {
