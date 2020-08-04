@@ -107,5 +107,19 @@ let quoteArray = [
     'I am happy to inform all of the people living their Suburban Lifestyle Dream that you will no longer be bothered or financially hurt by having low income housing built in your neighborhood',
     'With Universal Main-In Voting (not Absentee Voting, which is good), 2020 will be the most INACCURATE & FRAUDULENT Election in history.',
     '[The election] will be a great embarrassment to the USA. Delay the Election until people can properly, securly and safely vote???',
-    'Support Patio Pizza and its wonderful owner, Guy Caligiuri, in St. James, Long Island (N.Y.). Great Pizza!!!'
+    'Support Patio Pizza and its wonderful owner, Guy Caligiuri, in St. James, Long Island (N.Y.). Great Pizza!!!',
+    `Right now, [COVID-19] is under control. They are dying; that's true. It is what it is... It's under control as much as you can control it.`,
+    `I had no problem. I had no problem whatsoever. And importantly, I didn't test positive.`,
+    `"Hydroxy has tremendous support, but politically it's toxic because I supported it. If I would have said, 'Do not use hydroxychloroquine under any circumstannces,' they would have come out and they would have said, 'It's a great it's a great thing.'"`,
+    `"we're on pace to have a vaccine available this year, maybe far in advance of the end of the year."`,
+    `"Absentee [voting] is great. It works. Like in Florida, they'll do absentee. It really works. But universal mail-in ballots is going to be a great embarrassment to our country."`,
+    `"In an illegal late night coup, Nevada's clubhouse Governor made it impossible for Republicans to win the state. Post Office could never handle the Traffic of Mail-In Votes without preparation. Using Covid to steal the state. See you in Court!"`,
+    `"Cases up because of BIG Testing! Much of our Country is doing very well. Open the Schools!"`,
+    `"I don't take any responsibility at all."`,
+    `"[Russian bounties] was nevver brought to my attention. I think it's another Russia hoax. They've been giving me the Russia hoax, Shifty-Schiff and all these characters from the day I got here."`,
+    `"We beat Obama 4 years ago, he worked harder than Crooked Hillary, and we'll do it again!"`,
+    `"As far as TikTok is concerned we're banning them from the United States."`,
+    `"Other countries have it worse than we do." (deaths re: COVID-19)`,
+    `"Glad I was able to get the very dishonnest LameStream Media to finally start talking about the RISKS to our Democracy from dangerous Universal Mail-In-Voting (not Absentee Voting, which I totally support!)."`,
+    `"Drug prices will soonn be lowered massively. Big Pharma (Drug Companies) are advertising against me like crazy because lower prices mean less profit. When you watch a Fake Ad, just think lower drug prices!!!"` 
 ];

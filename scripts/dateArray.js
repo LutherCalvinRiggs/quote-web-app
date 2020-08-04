@@ -107,5 +107,19 @@ let dateArray = [
     'July 29, 2020',
     'July 31, 2020',
     'July 31, 2020',
-    'July 31, 2020'
+    'July 31, 2020',
+    'August 3, 2020',
+    'August 3, 2020',
+    'August 3, 2020',
+    'August 3, 2020',
+    'August 3, 2020',
+    'August 3, 2020',
+    'August 3, 2020',
+    'March 13, 2020',
+    'July 31, 2020',
+    'July 31, 2020',
+    'August 1, 2020',
+    'July 30, 2020',
+    'July 30, 2020',
+    'July 30, 2020'
 ];
